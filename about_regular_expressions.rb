@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 require File.expand_path(File.dirname(__FILE__) + '/neo')
-
+class AboutRegularExpressions < Neo::Koan
    def test_a_pattern_is_a_regular_expression
-    assert_equal __, /pattern/.class
+    assert_equal RegExp, /pattern/.class
   end
 
   def test_a_regexp_can_search_a_string_for_matching_content
@@ -147,4 +147,5 @@ require File.expand_path(File.dirname(__FILE__) + '/neo')
   def test_gsub_is_like_find_and_replace_all
     assert_equal __, "one two-three".gsub(/(t\w*)/) { $1[0, 1] }
   end
+end
 end
