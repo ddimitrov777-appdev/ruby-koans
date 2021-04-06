@@ -1,8 +1,7 @@
 # -*- coding: utf-8 -*-
 require File.expand_path(File.dirname(__FILE__) + '/neo')
 
-class AboutRegularExpressions < Neo::Koan
-  def test_a_pattern_is_a_regular_expression
+   def test_a_pattern_is_a_regular_expression
     assert_equal __, /pattern/.class
   end
 
@@ -32,14 +31,6 @@ class AboutRegularExpressions < Neo::Koan
 
     # THINK ABOUT IT:
     #
-    # When would * fail to match?
-  end
-
-  # THINK ABOUT IT:
-  #
-  # We say that the repetition operators above are "greedy."
-  #
-  # Why?
 
   # ------------------------------------------------------------------
 
@@ -142,8 +133,6 @@ class AboutRegularExpressions < Neo::Koan
   end
 
   # THINK ABOUT IT:
-  #
-  # Explain the difference between a character class ([...]) and alternation (|).
 
   # ------------------------------------------------------------------
 
