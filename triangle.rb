@@ -15,15 +15,15 @@
 #
 def triangle(a, b, c)
   if a == b && b == c
-    :equilateral
+    return :equilateral
   end
   if (a == b && a != c) || (a == c && a != b) || (b == c && b != a)
   # WRITE THIS CODE
-  :isosceles
+   return :isosceles
   end
 
   if a != b && a != c && b != c
-   :scalene
+   return :scalene
   end
 
 end
