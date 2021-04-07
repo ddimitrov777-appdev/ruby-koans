@@ -62,8 +62,8 @@ class AboutMethods < Neo::Koan
   end
 
   def test_calling_with_variable_arguments
-    assert_equal __, method_with_var_args.class
-    assert_equal __, method_with_var_args
+    assert_equal Array, method_with_var_args.class
+    assert_equal args, method_with_var_args
     assert_equal __, method_with_var_args(:one)
     assert_equal __, method_with_var_args(:one, :two)
   end
