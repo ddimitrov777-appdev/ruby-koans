@@ -1,7 +1,7 @@
 require File.expand_path(File.dirname(__FILE__) + '/neo')
 
 class AboutModules < Neo::Koan
- module Nameable
+  module Nameable
     def set_name(new_name)
       @name = new_name
     end
@@ -42,9 +42,9 @@ class AboutModules < Neo::Koan
     assert_equal "WOOF", fido.bark
   end
 
-  def test_module_methods_are_also_availble_in_the_object
+  def test_module_methods_are_also_available_in_the_object
     fido = Dog.new
-    assert_nothing_raised(Exception) do
+    assert_nothing_raised do
       fido.set_name("Rover")
     end
   end
