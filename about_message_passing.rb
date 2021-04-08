@@ -183,3 +183,4 @@ class AboutMessagePassing < Neo::Koan
   end
 
 end
+
